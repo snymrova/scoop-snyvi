@@ -1,0 +1,28 @@
+{
+    "version": "1.3.0",
+    "description": "A fast, beautiful viewer for the documents your agents produce",
+    "homepage": "https://mrova.rocks/snyvi",
+    "license": "MIT",
+    "url": "https://github.com/snymrova/snyvi/releases/download/v1.3.0/snyvi-1.3.0-x86_64-pc-windows-msvc.zip",
+    "hash": "7d0c534eb5b06a10b9d0e2490c71a63d6a098900475bfbb5ac7489bce5fd64dc",
+    "extract_dir": "snyvi-1.3.0-x86_64-pc-windows-msvc",
+    "bin": "snyvi.exe",
+    "pre_uninstall": [
+        "if (Test-Path \"$dir\\snyvi.exe\") { & \"$dir\\snyvi.exe\" stop 2>$null }",
+        "Stop-Process -Name snyvi-app, snyvi -Force -ErrorAction SilentlyContinue"
+    ],
+    "notes": [
+        "snyvi init-claude --auto   connects Claude Code; snyvi init <agent> for the others",
+        "snyvi app                  opens the window; snyvi send FILE.md prints a link"
+    ],
+    "checkver": {
+        "github": "https://github.com/snymrova/snyvi"
+    },
+    "autoupdate": {
+        "url": "https://github.com/snymrova/snyvi/releases/download/v$version/snyvi-$version-x86_64-pc-windows-msvc.zip",
+        "extract_dir": "snyvi-$version-x86_64-pc-windows-msvc",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
