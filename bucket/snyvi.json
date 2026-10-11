@@ -1,11 +1,11 @@
 {
-    "version": "1.33.1",
+    "version": "1.34.0",
     "description": "A fast, beautiful viewer for the documents your agents produce",
     "homepage": "https://mrova.rocks/snyvi",
     "license": "MIT",
-    "url": "https://github.com/snymrova/snyvi/releases/download/v1.33.1/snyvi-1.33.1-x86_64-pc-windows-msvc.zip",
-    "hash": "7236795f523842791d1c51cf553832e5120310ff4eb80f860253db4de9dac42d",
-    "extract_dir": "snyvi-1.33.1-x86_64-pc-windows-msvc",
+    "url": "https://github.com/snymrova/snyvi/releases/download/v1.34.0/snyvi-1.34.0-x86_64-pc-windows-msvc.zip",
+    "hash": "861bba2af7b2c1969396e343aedbfb493fbbc9d3084a9bc57cd83e299dc7db84",
+    "extract_dir": "snyvi-1.34.0-x86_64-pc-windows-msvc",
     "bin": "snyvi.exe",
     "pre_uninstall": [
         "if (Test-Path \"$dir\\snyvi.exe\") { & \"$dir\\snyvi.exe\" stop 2>$null }",
