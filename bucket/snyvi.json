@@ -1,11 +1,11 @@
 {
-    "version": "1.50.0",
+    "version": "1.52.0",
     "description": "All your passion projects, in one calm place",
     "homepage": "https://mrova.rocks/snyvi",
     "license": "MIT",
-    "url": "https://github.com/snymrova/snyvi/releases/download/v1.50.0/snyvi-1.50.0-x86_64-pc-windows-msvc.zip",
-    "hash": "c13d7767c962e294400ef339800e37cf87ba87386fe3955525922c8191f0963c",
-    "extract_dir": "snyvi-1.50.0-x86_64-pc-windows-msvc",
+    "url": "https://github.com/snymrova/snyvi/releases/download/v1.52.0/snyvi-1.52.0-x86_64-pc-windows-msvc.zip",
+    "hash": "feb5dacc570ed3eb789ea18ca01b329323aad02b045d24b85cbe575e0d0d7995",
+    "extract_dir": "snyvi-1.52.0-x86_64-pc-windows-msvc",
     "bin": "snyvi.exe",
     "pre_uninstall": [
         "if (Test-Path \"$dir\\snyvi.exe\") { & \"$dir\\snyvi.exe\" stop 2>$null }",
